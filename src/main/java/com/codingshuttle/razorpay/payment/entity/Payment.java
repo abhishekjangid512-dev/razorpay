@@ -62,6 +62,9 @@ public class Payment extends BaseEntity {
     @Column(length = 255)
     private String errorDescription;
 
+    @Column(length = 100)
+    private String processorReference;
+
     private LocalDateTime authorizedAt;
 
     private LocalDateTime capturedAt;
